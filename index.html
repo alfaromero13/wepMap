@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>   
+        <meta charset="UTF-8">
+        <title>MAP</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin=""/>  
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900i&display=swap" rel="stylesheet">
+           
+    </head>
+    <body>
+       <h1 id='title'>App MAP</h1>
+        <div class="wrapper">
+          
+           <div id=bar_lateral>
+             <div style="background-color: white;">
+                <div id="play_ico"> Marker <img src="./icones/play48.png" style="width: 30px;height: 30px;" ></div>
+                <div id="pause_ico"> Marker  <img src="./icones/pause48.png" style="width: 30px;height: 30px;"></div>
+                <div id="stop_ico">  Marker  <img src="./icones/stop48.png" style="width: 30px;height: 30px;" ></div>  
+              </div>
+
+            <div id="zone-btn" style="background-color: white;"> 
+                <h2>Create Zone </h2> 
+                <button style="background-color: #ccccc;" onclick="ZoneCircle()"><div id="play_ico"> Zone circulaire <img src="./icones/circle.png" style="width: 30px;height: 30px;" ></div>
+                
+                </button>
+                <button style="background-color: #ccccc;" onclick="ZonePoli()"><div id="pause_ico">  Zone polygone  <img src="./icones/poli.png" style="width: 30px;height: 30px;"></div>
+                </button>
+               <button style="background-color: #ccccc;" onclick="FreeZone()"> <div id="stop_ico">   Zone free  <img src="./icones/free.png" style="width: 30px;height: 30px;" ></div>
+               </button> 
+            </div> 
+               
+           </div>
+            <div id="mapid"></div>
+
+        </div>
+    
+    </body>
+    <!--JS popup machine-->
+    <script type="text/javascript" src="js-map.js"></script>
+    </html>
+     
+        
+        
+  
