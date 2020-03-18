@@ -1,18 +1,18 @@
 /*different tipes de icones*/   
 
     var play_ico = L.icon({
-        iconUrl: './icones/play48.png',
+        iconUrl: 'play48.png',
         iconSize: [30, 30]
         
     
     });
     var pause_ico = L.icon({
-        iconUrl: './icones/pause48.png',
+        iconUrl: 'pause48.png',
         iconSize: [30, 30]
 
     });
     var stop_ico = L.icon({
-        iconUrl: './icones/stop48.png',
+        iconUrl: 'stop48.png',
         iconSize: [30, 30]
                                     
     });
